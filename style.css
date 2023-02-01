@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: 'League Spartan';
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 28rem;
+    gap: 1.7rem;
+}
+
+.title > h1 {
+    font-size: 3.3rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.title > p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.rating > article {
+    padding: 1rem;
+    padding-left: 2rem;
+    background-color: hsl(300, 24%, 96%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 25rem;
+    height: 3.2rem;
+    border-radius: 7px;
+    margin-right: 28rem;
+    box-shadow: 0px 0px 20px rgba(32, 32, 32, 0.30);
+}
+
+.rating > article > p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 15.5px;
+}
+
+.rt1 {
+    position: relative;
+    right: 6.8rem;
+}
+
+.rt2 {
+    position: relative;
+    right: 3.4rem;
+}
+
+.review {
+    display: flex;
+    width: 1030px;
+    margin-top: 4rem;
+    gap: 1.6rem;
+}
+
+.review > div {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    padding: 2.3rem 2rem 2.3rem 2rem;
+    box-shadow: 0px 0px 30px rgba(32, 32, 32, 0.30);
+}
+
+.review > div > header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.review > div > header > img {
+    border-radius: 100%;
+    width: 2.8rem;
+}
+
+.review > div > header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+}
+
+.desc {
+    color: hsla(333, 80%, 67%, 0.645);
+}
+
+.review > div > p {
+    color: rgba(255, 255, 255, 0.853);
+    line-height: 1.3rem;
+}
+
+.card2 {
+    position: relative;
+    top: 1rem;
+}
+
+.card3 {
+    position: relative;
+    top: 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .title {
+        margin-left: 10rem;
+    }
+
+    .rating {
+        position: relative;
+        left: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    main {
+        margin-top: 6rem;
+    }
+
+    .review {
+        margin-left: 15rem;
+        margin-top: 8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    main {
+        margin-top: 14rem;
+    }
+
+    .review {
+        margin-left: 28rem;
+        margin-top: 8rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    
+}
