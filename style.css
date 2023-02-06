@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw top 0, left 50vw bottom 0;
+}
+
 main {
     font-family: 'League Spartan';
     font-size: 15px;
@@ -61,7 +67,7 @@ main {
     box-shadow: 0px 0px 20px rgba(32, 32, 32, 0.30);
 }
 
-.rating > article > p {
+.rating > article > h2 {
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     font-size: 15.5px;
@@ -133,6 +139,8 @@ main {
     top: 2rem;
 }
 
+
+
 @media screen and (max-width: 1440px) {
     
     .title {
@@ -173,5 +181,94 @@ main {
 }
 
 @media screen and (max-width: 425px) {
-    
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 2rem;
+    }
+
+    main {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        height: 242px;
+    }
+
+    .title {
+        width: auto;
+        margin: 0;
+        margin-top: 13rem;
+        position: relative;
+        top: 5rem;
+        text-align: center;
+    }
+
+    .rating {
+        margin: 0;
+        position: static;
+        margin-top: 6rem;
+    }
+
+    .rating > article {
+        position: static;
+        width: 360px;
+    }
+
+    .rt2 > h2 {
+        width: 190px;
+    }
+
+    .review {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: static;
+        gap: 0;
+        width: auto;
+        margin-top: 32rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .review {
+        margin-top: 44rem;
+    }
+
+    .rating {
+        margin-top: 13rem;
+    }
+
+    .rating > article {
+        width: 311px;
+    }
+
+    .rt1 > h2 {
+        width: 140px;
+    }
+
+    .rt2 > h2 {
+        width: 140px;
+    }
+
+    .rt3 > h2 {
+        width: 140px;
+    }
+
+    .title {
+        position: relative;
+        top: 12rem;
+    }
+
 }
